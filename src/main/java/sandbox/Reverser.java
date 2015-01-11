@@ -7,7 +7,6 @@ class Reverser {
 // doReverse - initialize stack, push chars, pop chars by appending to new string
 
 private String input;
-private String output;
 
 	public Reverser (String in) {
 		
