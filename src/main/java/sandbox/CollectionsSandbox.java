@@ -13,20 +13,6 @@ public class CollectionsSandbox {
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		
-		// List of Strings
-		/*
-		ArrayList<String> strArrList = new ArrayList<String>();
-		strArrList.add("first");
-		strArrList.add("second");
-		strArrList.add("third");
-		strArrList.add("fourth");
-		strArrList.add("fifth");
-		
-		for (String strItem: strArrList) {
-			System.out.println("string: " + strItem);
-		}
-		*/
-		
 		// ArrayList
 		ArrayList<Order> currentOrderList = new ArrayList<Order>();
 		
@@ -38,7 +24,8 @@ public class CollectionsSandbox {
 		currentOrder.setOrder("pizza");
 		currentOrderList.add(currentOrder);
 
-		Order currentOrder2 = new Order(2, "Jane", "Doe", "Chula Vista, CA", "wings");
+		// Use parameterized constructor
+     	Order currentOrder2 = new Order(2, "Jane", "Doe", "Chula Vista, CA", "wings");
 		currentOrderList.add(currentOrder2);
 		//currentOrderList.remove(0);
 		
@@ -56,22 +43,22 @@ public class CollectionsSandbox {
 		orderMap.put("second", currentOrder2);
 		//orderMap.remove("first");
 		
+     // Iterator with HashMap
 		Iterator orderIt = orderMap.entrySet().iterator();
 		while (orderIt.hasNext()) {
 			Map.Entry pairs = (Map.Entry)orderIt.next();
 			System.out.println(pairs.getKey() + " = " + pairs.getValue());
 		}
 		
-		//System.out.println("orderMap: " + orderMap.toString());
-		System.out.println("first order in map: " + orderMap.get("first").getOrderId());
+		System.out.println("first orderId in map: " + orderMap.get("first").getOrderId());
 		
-		// Array
-		Order strArr[] = new Order[2];
-		strArr[0] = currentOrder;
-		strArr[1] = currentOrder2;
+		// Basic Array
+		Order orderArr[] = new Order[2];
+		orderArr[0] = currentOrder;
+		orderArr[1] = currentOrder2;
 		
-		for (int i = 0; i < strArr.length; i++) {
-			System.out.println("array item: " + strArr[i]);
+		for (int i = 0; i < orderArr.length; i++) {
+			System.out.println("array item: " + orderArr[i]);
 		}
 		
 		// LinkedList
@@ -79,8 +66,8 @@ public class CollectionsSandbox {
 		orderLinkedList.add(currentOrder);
 		orderLinkedList.add(currentOrder2);
 		
-		for (Order node : orderLinkedList) {
-			System.out.println("linkedlist item: " + node.toString());
+		for (Order orderLink : orderLinkedList) {
+			System.out.println("linkedlist item: " + orderLink.toString());
 		}
 		
 	}
