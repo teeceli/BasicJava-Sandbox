@@ -15,7 +15,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>sandbox.CollectionsSandbox</mainClass>
+                            <mainClass>sandbox.RecursionApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
