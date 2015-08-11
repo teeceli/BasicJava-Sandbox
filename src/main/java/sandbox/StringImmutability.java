@@ -3,11 +3,13 @@ package sandbox;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// Example shows String object immutability
 public class StringImmutability {
   
   final static Logger logger = LoggerFactory.getLogger(StringImmutability.class);
  
   public static void main(String[] args) {
+    
     String str = "Mississippi";
     String str2 = str;
     
