@@ -39,7 +39,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>sandbox.SandboxRunner</mainClass>
+                            <mainClass>sandbox.LambdaArrayList</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
