@@ -7,9 +7,9 @@ public class MyArrayOps {
 		int count = 0;
 		for(int i=0; i < vals.length; i++) {
 			if(vals[i] == v) {
-           count++;
-         }
-      }
+				count++;
+			}
+		}
 		return count;
 	}
 }
