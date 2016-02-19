@@ -3,7 +3,7 @@ package sandbox;
 public class MethodReferenceDemo {
   
   // This method has the MyFunc functional interface as the type of its first parameter. 
-  // The other two //parameters receive an array and a value, both of type T.
+  // The other two parameters receive an array and a value, both of type T.
 	static <T> int myOp(MyFunc<T> f, T[] vals, T v) {
 		return f.func(vals, v);
 	}
