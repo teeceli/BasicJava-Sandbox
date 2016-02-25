@@ -18,37 +18,17 @@ import sandbox.StaticInitialization;
 public class InterviewCake1 {
 	
 	final static Logger logger = LoggerFactory.getLogger(StaticInitialization.class);
+	
+	final static InterviewCakeHelper icHelper = new InterviewCakeHelper();
 
 	public static void main(String[] args) {
 				
-		List<Integer> stockPricesYesterday = Arrays.asList(10, 7, 5, 8, 11, 9);			// Should be 6
-		//List<Integer> stockPricesYesterday = Arrays.asList(10, 7, 5, 4, 3, 2, 0);		// Should be -1
+		List<Integer> stockPricesYesterday = Arrays.asList(10, 7, 5, 8, 11, 9);			
 		
-		Integer bestProfit = getMaxProfit(stockPricesYesterday);
+		Integer bestProfit = icHelper.getMaxProfit(stockPricesYesterday);
 		
 		logger.info("best profit: " + bestProfit.toString());
 		
 	}
-
-	private static Integer getMaxProfit(List<Integer> stockPricesYesterday) {
-		
-		Integer currentBestProfit = -9999;
-		Integer minPrice = stockPricesYesterday.get(0);
-		
-		for (int i = 0; i < stockPricesYesterday.size() - 1; i++) {
-			
-			if (stockPricesYesterday.get(i) < minPrice) {
-				minPrice = stockPricesYesterday.get(i);
-			}
-
-			Integer tmpProfit = stockPricesYesterday.get(i+1) - minPrice;
-			
-			if (tmpProfit > currentBestProfit) {
-				currentBestProfit = tmpProfit;
-			}
-		}
-		
-		return currentBestProfit;
-	}
-
+	
 }
