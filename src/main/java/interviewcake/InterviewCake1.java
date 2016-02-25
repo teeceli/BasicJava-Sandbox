@@ -8,14 +8,20 @@ import org.slf4j.LoggerFactory;
 
 import sandbox.StaticInitialization;
 
+/*
+ * Stock Price Best Profit Calculator
+ * https://www.interviewcake.com/question/java/stock-price
+ * Solution on web site is a little more elegant because of not needing to 
+ * initialize bestProfit to -9999 but I think mine is easier to read. 
+ * Still satisfies O(n) time complexity
+ */
+
 public class InterviewCake1 {
 	
 	final static Logger logger = LoggerFactory.getLogger(StaticInitialization.class);
 
 	public static void main(String[] args) {
-		
-		//Integer[] stockPricesYesterday = {15, 7, 5, 2, 1, 0};
-		
+				
 		List<Integer> stockPricesYesterday = Arrays.asList(15, 7, 5, 4, 2, 0);
 		
 		Integer bestProfit = getMaxProfit(stockPricesYesterday);
