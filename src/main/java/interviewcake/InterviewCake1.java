@@ -6,8 +6,6 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import sandbox.StaticInitialization;
-
 /*
  * Stock Price Best Profit Calculator
  * https://www.interviewcake.com/question/java/stock-price
@@ -17,7 +15,7 @@ import sandbox.StaticInitialization;
 
 public class InterviewCake1 {
 	
-	final static Logger logger = LoggerFactory.getLogger(StaticInitialization.class);
+	final static Logger logger = LoggerFactory.getLogger(InterviewCake1.class);
 	
 	final static InterviewCakeHelper icHelper = new InterviewCakeHelper();
 
