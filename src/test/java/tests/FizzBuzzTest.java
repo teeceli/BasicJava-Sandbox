@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
-import sandbox.FizzBuzz;
+import examples.FizzBuzz;
 
 
 // Write an algorithm that prints all numbers between 1 and n, replacing multiples of 3 

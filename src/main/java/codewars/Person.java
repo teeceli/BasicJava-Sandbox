@@ -1,13 +1,13 @@
 package codewars;
 
 public class Person {
-    String name;
+	String name;
 
-    public Person(String personName) {
-        name = personName;
-    }
-
-    public String greet(Person person, Person otherPerson) {
-        return String.format("Hi %s, my name is %s", person.name, otherPerson.name);
-    }
+	public Person(String personName) {
+		name = personName;
+	}
+	
+	public String greet(Person person, Person otherPerson) {
+		return String.format("Hi %s, my name is %s", person.name, otherPerson.name);
+	}
 }

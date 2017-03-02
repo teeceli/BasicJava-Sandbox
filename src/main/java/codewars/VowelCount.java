@@ -1,11 +1,10 @@
 package codewars;
 
 public class VowelCount {
-  
-    public static int getCount(String str) {
-    	int vowelsCount = 0;
-    	// your code here
-    	return vowelsCount;
-  }
-  
+
+	public static int getCount(String str) {
+		int vowelsCount = 0;
+		// your code here
+		return vowelsCount;
+	}
 }

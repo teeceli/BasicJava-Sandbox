@@ -2,6 +2,13 @@ package interview;
 
 public class Interviewer {
 	
+private Integer id;
+	
+	private String firstName;
+	
+	private String lastName;
+
+
 	public Integer getId() {
 		return id;
 	}
@@ -25,13 +32,7 @@ public class Interviewer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-	private Integer id;
 	
-	private String firstName;
-	
-	private String lastName;
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -73,5 +74,4 @@ public class Interviewer {
 	public String toString() {
 		return "Interviewer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
 	}
-
 }

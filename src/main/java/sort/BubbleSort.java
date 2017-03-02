@@ -2,7 +2,7 @@ package sort;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sandbox.StaticInitialization;
+import examples.StaticInitialization;
 
 public class BubbleSort {
 	

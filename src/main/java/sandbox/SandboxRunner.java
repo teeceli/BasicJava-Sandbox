@@ -1,5 +1,7 @@
 package sandbox;
 
+import examples.StringImmutability;
+
 public class SandboxRunner {
   
   public static void main(String[] args) {
