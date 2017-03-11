@@ -13,7 +13,7 @@ public class Bird implements Animal{
 		String speak = "tweet";
 		System.out.println(speak);
 		beak.setLength(5);
-		System.out.println("Beak length: " + beak.getLength());
+		getBeakLength();
 		return speak;
 	}
 
@@ -22,5 +22,11 @@ public class Bird implements Animal{
 		String eat = "eats bird food";
 		System.out.println(eat);
 		return eat;
+	}
+	
+	public Integer getBeakLength() {
+		Integer length = beak.getLength();
+		System.out.println("Beak length: " + length);
+		return length;
 	}
 }
