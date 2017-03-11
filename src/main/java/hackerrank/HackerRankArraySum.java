@@ -8,7 +8,7 @@ public class HackerRankArraySum {
 		
 		final Scanner in = new Scanner(System.in);
 		
-		System.out.print("Enter the size of the array: ");
+		//System.out.print("Enter the size of the array: ");
 		final int sizeOfArray = in.nextInt();
 		
 		final int numArray[] = new int[sizeOfArray];
@@ -19,19 +19,19 @@ public class HackerRankArraySum {
 		
 		in.close();
 		
-		sum(sizeOfArray, numArray);
+		int total = sum(sizeOfArray, numArray);
+		
+		System.out.println(total);
 	}
 	
 	public static int sum(final int sizeOfArray, final int[] numArray) {
 		
-		int arrayTotal = 0;
+		int total = 0;
 		
 		for (int k = 0; k < sizeOfArray; k++) {
-			arrayTotal = arrayTotal + numArray[k];
+			total = total + numArray[k];
 		}
 		
-		System.out.println("Sum of array is: " + arrayTotal);
-		
-		return arrayTotal;
+		return total;
 	}
 }
