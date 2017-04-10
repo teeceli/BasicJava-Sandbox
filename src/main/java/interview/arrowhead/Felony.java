@@ -11,12 +11,15 @@ public class Felony {
 	public Boolean getHasFelony() {
 		return hasFelony;
 	}
+	
 	public void setHasFelony(Boolean hasFelony) {
 		this.hasFelony = hasFelony;
 	}
+	
 	public Integer getYearsSinceFelony() {
 		return yearsSinceFelony;
 	}
+	
 	public void setYearsSinceFelony(Integer yearsSinceFelony) {
 		this.yearsSinceFelony = yearsSinceFelony;
 	}

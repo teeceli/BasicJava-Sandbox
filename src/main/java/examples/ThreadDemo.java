@@ -1,17 +1,15 @@
 package examples;
 
 public class ThreadDemo {
-  
-  public static void main(String args[ ] ) {
-    new NewThread(); 	// create a new thread
-    try {
-      for(int i = 5; i > 0; i--) {
-        System.out.println("Main Thread: " + i);
-        Thread.sleep(1000);
-      }
-    } catch (InterruptedException e) {
-    	System.out.println("Main thread interrupted.");
-    }
-    System.out.println("Main thread exiting.");
-  }
+
+	public static void main(String[] args) {
+		
+		CodeRunner runner = new CodeRunner("code runner thread");
+		
+		Thread thread = new Thread(runner);
+		thread.start();
+
+		Thread thread2 = new Thread(runner);
+		thread2.start();
+	}
 }

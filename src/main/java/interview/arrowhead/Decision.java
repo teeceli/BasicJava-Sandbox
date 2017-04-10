@@ -11,12 +11,15 @@ public class Decision {
 	public String getResult() {
 		return result;
 	}
+	
 	public void setResult(final String result) {
 		this.result = result;
 	}
+	
 	public String getMessage() {
 		return message;
 	}
+	
 	public void setMessage(final String message) {
 		this.message = message;
 	}

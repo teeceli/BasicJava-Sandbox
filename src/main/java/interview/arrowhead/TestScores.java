@@ -11,12 +11,15 @@ public class TestScores {
 	public Integer getSatScore() {
 		return satScore;
 	}
+	
 	public void setSatScore(Integer satScore) {
 		this.satScore = satScore;
 	}
+	
 	public Integer getActScore() {
 		return actScore;
 	}
+	
 	public void setActScore(Integer actScore) {
 		this.actScore = actScore;
 	}
@@ -35,7 +38,8 @@ public class TestScores {
 		}
 			
 		TestScores testScores = (TestScores) o;
-		return satScore == testScores.satScore && actScore == testScores.actScore;
+		return satScore == testScores.satScore && 
+				actScore == testScores.actScore;
 	}
 	
 	@Override

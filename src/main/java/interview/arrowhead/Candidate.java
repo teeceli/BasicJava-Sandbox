@@ -23,48 +23,63 @@ public class Candidate {
 	public String getFirstName() {
 		return firstName;
 	}
+	
 	public void setFirstName(final String firstName) {
 		this.firstName = firstName;
 	}
+	
 	public String getLastName() {
 		return lastName;
 	}
+	
 	public void setLastName(final String lastName) {
 		this.lastName = lastName;
 	}
+	
 	public String getEmailAddress() {
 		return emailAddress;
 	}
+	
 	public void setEmailAddress(final String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+	
 	public Integer getAge() {
 		return age;
 	}
+	
 	public void setAge(final Integer age) {
 		this.age = age;
 	}
+	
 	public String getState() {
 		return state;
 	}
+	
 	public void setState(final String state) {
 		this.state = state;
 	}
+	
 	public GradePointAverage getGpa() {
 		return gpa;
 	}
+	
 	public void setGpa(final GradePointAverage gpa) {
 		this.gpa = gpa;
 	}
+	
 	public TestScores getTestScores() {
 		return testScores;
 	}
+	
 	public void setTestScores(final TestScores testScores) {
 		this.testScores = testScores;
 	}
+	
 	public Felony getFelony() {
 		return felony;
 	}
+	
 	public void setFelony(final Felony felony) {
 		this.felony = felony;
 	}

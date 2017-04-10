@@ -11,12 +11,15 @@ public class GradePointAverage {
 	public Float getScale() {
 		return scale;
 	}
+	
 	public void setScale(Float scale) {
 		this.scale = scale;
 	}
+	
 	public Float getScore() {
 		return score;
 	}
+	
 	public void setScore(Float score) {
 		this.score = score;
 	}
