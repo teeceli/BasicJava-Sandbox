@@ -30,7 +30,7 @@ public class QuickSortTest {
 		
 		numbers = QuickSort.quicksort(numbers);
 		
-		Assert.assertNotEquals(numbers, expected);
+		Assert.assertNotSame(numbers, expected);
 		
 	}
 
