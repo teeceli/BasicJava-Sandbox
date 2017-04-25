@@ -31,6 +31,8 @@ public class Selenium2Test {
 		searchBox.sendKeys("ChromeDriver");
 		searchBox.submit();
 		Thread.sleep(2000);
+		// Note: findElement returns a NoSuchElementException if the element isn't found. Instead use findElements and you will back an empty list
+		System.out.println(driver.findElement(By.linkText("ChromeDriver - WebDriver for Chrome - Google Sites")));	
 		assertEquals("ChromeDriver - Google Search", driver.getTitle());
 	}
 
