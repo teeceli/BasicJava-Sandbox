@@ -1,4 +1,4 @@
-package interview.arrowhead;
+package arrowhead;
 
 public class InterviewAdmissionStrategy implements AdmissionStrategy {
 	
@@ -35,15 +35,18 @@ public class InterviewAdmissionStrategy implements AdmissionStrategy {
 	@Override
 	public Decision checkAccepted() {
 		
+		// Instant Reject
 		if (hasNullsReject(candidate) || hasFelonies(candidate) || hasInvalidAge(candidate) || 
 				hasLowGPA(candidate) || hasInvalidNameFormatting(candidate)) {
 			return decision(INSTANT_REJECT);
 		};
 		
+		// Instant Accept
 		if (hasCorrectAgeAndState(candidate) || hasHighScores(candidate) || hasHighGPA(candidate)) {
 			return decision(INSTANT_ACCEPT);
 		}
 		
+		// Needs Further Review
 		return decision(FURTHER_REVIEW);
 	}
 

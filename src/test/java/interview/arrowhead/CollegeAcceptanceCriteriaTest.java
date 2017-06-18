@@ -5,6 +5,13 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import arrowhead.Candidate;
+import arrowhead.CollegeAcceptanceCriteria;
+import arrowhead.Decision;
+import arrowhead.Felony;
+import arrowhead.GradePointAverage;
+import arrowhead.TestScores;
+
 public class CollegeAcceptanceCriteriaTest {
 	
 	private GradePointAverage gpa = new GradePointAverage();

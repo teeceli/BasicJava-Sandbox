@@ -7,6 +7,8 @@ import java.util.List;
 
 import org.junit.Test;
 
+import cake.InterviewCakeHelper;
+
 public class InterviewCake1Test {
 	
 	List<Integer> positiveProfitList = Arrays.asList(10, 7, 5, 8, 11, 9);

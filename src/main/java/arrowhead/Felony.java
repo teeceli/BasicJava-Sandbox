@@ -1,4 +1,4 @@
-package interview.arrowhead;
+package arrowhead;
 
 import java.util.Objects;
 

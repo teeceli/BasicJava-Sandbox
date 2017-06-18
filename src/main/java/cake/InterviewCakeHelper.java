@@ -1,4 +1,4 @@
-package interviewcake;
+package cake;
 
 import java.util.List;
 
