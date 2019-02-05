@@ -17,9 +17,9 @@ import com.sandbox.sandbox.OptionalSandbox;
 @ContextConfiguration(locations = {"classpath:application-context.xml"})
 public class OptionalSandboxTest {
 	
-	private static final List<String> NAMES = Arrays.asList("Larry", "Moe", "Curly", "Timur", "Leah");
+	private static final List<String> NAMES = Arrays.asList("Larry", "Moe", "Curly", "Timur", "Leah", "Chico");
 
-	private static final int NAME_LIST_SIZE = 5;
+	private static final int NAME_LIST_SIZE = 6;
 	
 	@Autowired
 	private OptionalSandbox optionalSandbox;
