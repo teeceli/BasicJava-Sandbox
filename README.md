@@ -1,3 +1,3 @@
 # Sandbox
 
-Sandbox environment for testing various concepts from Java: The Complete Reference and other resources
+Sandbox environment for testing/practicing various concepts in Spring and Java.
